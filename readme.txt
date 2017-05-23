@@ -12,7 +12,7 @@ A very lightweight lightbox plugin.
 
 == Description ==
 
-A very lightweight lightbox plugin based on [Luminous](https://github.com/imgix/luminous).
+A very lightweight lightbox plugin based on [Luminous](https://github.com/imgix/luminous) by imgix.
 
 ### How to use
 
@@ -21,7 +21,7 @@ A very lightweight lightbox plugin based on [Luminous](https://github.com/imgix/
 ### Useful Links:
 
 - [Github Repository](https://github.com/luizbills/luminous-lightbox-for-wp)
-- [Luminous Lightbox Demo](https://codepen.io/imgix/full/wMgOEL/)
+- [Luminous Lightbox Demo](https://imgix.github.io/luminous/)
 
 == Installation ==
 
