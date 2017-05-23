@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A very lightweight lightbox plugin.
+A very lightweight image lightbox plugin.
 
 == Description ==
 
-A very lightweight lightbox plugin based on [Luminous](https://github.com/imgix/luminous) by imgix.
+A very lightweight image lightbox plugin based on [Luminous](https://github.com/imgix/luminous) by imgix.
 
 ### How to use
 
@@ -20,7 +20,7 @@ A very lightweight lightbox plugin based on [Luminous](https://github.com/imgix/
 
 ### Useful Links:
 
-- [Github Repository](https://github.com/luizbills/luminous-lightbox-for-wp)
+- [Plugin Github Repository](https://github.com/luizbills/luminous-lightbox-for-wp)
 - [Luminous Lightbox Demo](https://imgix.github.io/luminous/)
 
 == Installation ==
@@ -40,11 +40,11 @@ Installing "Luminous Lightbox for WordPress" can be done either by searching for
 == Changelog ==
 
 = 1.0 =
-* 2012-12-13
+* 2017-05-23
 * Initial release
 
 == Upgrade Notice ==
 
 = 1.0 =
-* 2012-12-13
+* 2017-05-23
 * Initial release
