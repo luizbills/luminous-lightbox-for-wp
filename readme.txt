@@ -16,12 +16,12 @@ A very lightweight image lightbox plugin based on [Luminous](https://github.com/
 
 ### How to use
 
-- Just link your images to **Media File** (see in *Screenshots* Section).
+- Just select **Media File** at *Link to* on the options of your image/gallery (see below in the **Screenshots** Section).
 
 ### Useful Links:
 
 - [Plugin Github Repository](https://github.com/luizbills/luminous-lightbox-for-wp)
-- [Luminous Lightbox Demo](https://imgix.github.io/luminous/)
+- [Luminous Image Lightbox Demo](https://imgix.github.io/luminous/)
 
 == Installation ==
 
