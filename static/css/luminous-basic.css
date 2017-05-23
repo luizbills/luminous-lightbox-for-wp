@@ -173,6 +173,7 @@
 }
 
 /* This media query makes screens less than 460px wide display in a "fullscreen"-esque mode. Users can then scroll around inside the lightbox to see the entire image. */
+/*
 @media (max-width: 460px) {
   .lum-lightbox-image-wrapper {
     display: block;
@@ -192,3 +193,4 @@
     display: block;
   }
 }
+*/
