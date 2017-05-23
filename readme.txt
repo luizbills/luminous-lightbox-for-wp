@@ -39,12 +39,12 @@ Installing "Luminous Lightbox for WordPress" can be done either by searching for
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * 2017-05-23
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 * 2017-05-23
 * Initial release
