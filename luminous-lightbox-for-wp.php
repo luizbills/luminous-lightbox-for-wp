@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Luminous Lightbox for WordPress
-Description: Simple lightbox plugin.
+Description: Simple image lightbox plugin.
 Version: 1.0.0
 
 Author: Luiz Bills
