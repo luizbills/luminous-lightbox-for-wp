@@ -40,6 +40,7 @@
 
 .lum-lightbox {
   background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
 }
 
 .lum-lightbox-inner {
@@ -136,6 +137,11 @@
   max-height: 100%;
   width: 60px;
   cursor: pointer;
+}
+
+.lum-gallery-button:hover,
+.lum-gallery-button:focus {
+  background: transparent;
 }
 
 .lum-previous-button {

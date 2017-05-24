@@ -31,13 +31,37 @@ define( 'LLFWP_ASSETS_URL', esc_url( trailingslashit( plugins_url( '/static/', _
 
 add_action( 'wp_enqueue_scripts', 'llfwp_enqueue_scripts' );
 function llfwp_enqueue_scripts () {
+	if ( ! apply_filters( 'llfwp_enqueue_scripts', true ) ) return;
+
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === true ? '' : '.min';
 
-	wp_enqueue_script( 'llfwp-luminous', LLFWP_ASSETS_URL . "js/luminous$suffix.js", array(), LLFWP_VERSION, true );
-	wp_enqueue_script( 'llfwp-luminous-init', LLFWP_ASSETS_URL . "js/luminous-init$suffix.js", array( 'llfwp-luminous' ), LLFWP_VERSION, true );
+	wp_enqueue_script( 'llfwp-luminous', LLFWP_ASSETS_URL . "js/luminous$suffix.js", array( 'jquery' ), LLFWP_VERSION, true );
+	wp_enqueue_script( 'llfwp-luminous-init', LLFWP_ASSETS_URL . "js/luminous-init$suffix.js", array( 'jquery', 'llfwp-luminous' ), LLFWP_VERSION, true );
 
 	wp_localize_script( 'llfwp-luminous-init', 'llfwp_luminous_args', array(
-		'selector' => apply_filters( 'llfwp_selector', 'a[href*=".jpg"], a[href*=".jpge"], a[href*=".png"]' )
+		'gallery_selectors' => apply_filters( 'llfwp_gallery_selectors', array(
+			// wordpress native gallery
+			'.gallery'
+		) ),
+
+		'image_link_selectors' => apply_filters( 'llfwp_image_link_selectors', array(
+			'a[href*=".jpg"]',
+			'a[href*=".jpge"]',
+			'a[href*=".png"]'
+		) ),
+
+		'ignored_image_links' => apply_filters( 'llfwp_ignored_links', array(
+			// don't conflicts with woocommerce gallery
+			'.woocommerce-product-gallery__image > a',
+		) ),
+
+		'close_lightbox_on_scroll' => apply_filters( 'llfwp_close_lightbox_on_scroll', false ),
+
+		'close_lightbox_with_esc' => apply_filters( 'llfwp_close_lightbox_with_esc', true ),
+
+		'inject_base_styles' => apply_filters( 'llfwp_inject_base_styles', true ),
+
+		'show_caption' => apply_filters( 'llfwp_show_caption', true ),
 	) );
 
 	wp_enqueue_style( 'llfwp-luminous', LLFWP_ASSETS_URL . "css/luminous-basic$suffix.css", array(), LLFWP_VERSION );
